@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:super_hero/widgets.dart';
 
 class DetailPage extends StatelessWidget {
   DetailPage(this.data, this.index);
@@ -11,10 +10,7 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     String image = data["image"];
     return Scaffold(
-        backgroundColor: mainColor,
-        /*appBar: AppBar(
-          title: Text(data["alias"].toString()),
-        ),*/
+        backgroundColor: mainColor,        
         body: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
